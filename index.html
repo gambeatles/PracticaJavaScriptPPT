@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Piedra Papel Tijera</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="formularioPartidas">
+        <p><b>Opciones Del Juego</b></p>
+        <form>
+            <label>Ingrese Cantidad De Partidas (Maximo = 5)</label>
+            <input type="number" placeholder="Partidas" min="1" max="5" id="cantidad">
+            <button type="button" id="botonPartidas"><b>ENVIAR</b></button>
+        </form>
+    </div>
+
+    <div class="opcionPartida">
+        <p>Elija Opcion Para Jugar (1 => PIEDRA)  (2 => PAPEL)  (3 => TIJERA)</p>
+        <form>
+            <label>Ingrese Opcion</label>
+            <input type="number" placeholder="Opcion" min="1" max="3" id="opcion">
+            <!-- <button type="button" onclick="opcionUsuario(),sumador()"><b>JUGAR</b></button> -->
+            <button type="button" id="botonJugar"><b>JUGAR</b></button>
+        </form>
+    </div>
+
+    <div class="contadorPartidas">
+        <p><b>Partidas Jugadas</b></p>
+        <div class="partidas">
+        <p id="contadorInicial"></p>
+        <span>DE</span>
+        <p id="contadorFinal"></p>
+        </div>
+    </div>
+    <div>
+        <p id="resultado"></p>
+    </div>
+    <div class="juegoUsuario">
+        <div class="usuario">
+            <p>USUARIO</p>
+        </div>
+        <div class="piedraUsuario">
+            <p id="piedraUsuario"><b>PIEDRA</b></p>
+        </div>
+        <div class="papelUsuario">
+            <p id="papelUsuario"><b>PAPEL</b></p>
+        </div>
+        <div class="tijeraUsuario">
+            <p id="tijeraUsuario"><b>TIJERA</b></p>
+        </div>
+    </div>
+
+    <div class="juegoMaquina">
+        <div class="maquina">
+            <p>MAQUINA</p>
+        </div>
+        <div class="piedraMaquina">
+            <p id="piedraMaquina"><b>PIEDRA</b></p>
+        </div>
+        <div class="papelMaquina">
+            <p id="papelMaquina"><b>PAPEL</b></p>
+        </div>
+        <div class="tijeraMaquina">
+            <p id="tijeraMaquina"><b>TIJERA</b></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
